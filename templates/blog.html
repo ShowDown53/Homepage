@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Best blog, Amazing</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <a href="/">O meni</a> | <a href="/projects">Moji projekti</a> | <a href="/blog">Blog</a> | <a href="/kontakt">Kontakt</a> | <a href="/random">Random</a>
+
+    <h1>Blog</h1>
+
+    {% for blog in blogs %}
+      <h2>{{ blog.title }}</h2>
+      <div>{{ blog.text }}</div>
+    {% endfor %}
+
+  </body>
+</html>
